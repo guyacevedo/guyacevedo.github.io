@@ -161,11 +161,11 @@ button:hover
 /* Banner Area */ 
 
 .site-main .site-banner {
-    background: url(../img/banner/home-banner.png) no-repeat 0% 50%;
+    background: url(../img/banner/home-banner.png) no-repeat 0% 80%;
 }
 
 .site-main .site-banner .site-title h3{
-    padding-top: 35%;
+    padding-top: 3%;
     font-weight: 500;
 }
 
@@ -188,8 +188,8 @@ button:hover
 }
 
 .site-main .site-banner .banner-image > img{
-    padding: 7rem 0;
-    width: 90rem;
+    padding:5%;
+    width: 60rem;
 }
 
 
