@@ -10,6 +10,16 @@ if (currentTheme === 'dark') {
 } else if (currentTheme === 'light') {
    
     document.body.classList.toggle('light-theme');
+}else{
+    let theme;
+    if (prefresDarkScheme.matches) {
+        document.body.classList.toggle('light-theme')
+        theme = document.body.classList.contains('light-theme') ? 'light' : 'dark'
+    } else {
+        document.body.classList.toggle('dark-theme')
+        theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light'
+    }
+    localStorage.setItem('theme', theme) 
 }
 
 boton.addEventListener('change', () => {
