@@ -10,12 +10,12 @@ $(document).ready(function () {
         return false;
     })
     $('.project-area .button-group #btn1').trigger('click');
-    let nav_offset_top = $('.header_area').height() + 50;
+ //   let nav_offset_top = $('.header_area').height()-50;
     function navbarFixed() {
         if ($('.header_area').length) {
             $(window).scroll(function () {
                 let scroll = $(window).scrollTop();
-                if (scroll >= nav_offset_top) {
+                if (scroll >= 50) {
                     $('.header_area .main-menu').addClass('navbar_fixed');
                 } else {
                     $('.header_area .main-menu').removeClass('navbar_fixed');
