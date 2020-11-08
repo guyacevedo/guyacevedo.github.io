@@ -1,29 +1,14 @@
-const boton = document.querySelector('#boton');
-const prefresDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+let theme;
 const currentTheme = localStorage.getItem('theme');
-if (currentTheme === 'dark') {
-    boton.click(); 
-} else if (currentTheme === 'light') {
-    document.body.classList.toggle('light-theme');
-}else{
-    let theme;
-    if (prefresDarkScheme.matches) {
-        document.body.classList.toggle('light-theme')
-        theme = document.body.classList.contains('light-theme') ? 'light' : 'dark'
-    } else {
-        document.body.classList.toggle('dark-theme')
-        theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light'
-    }
-    localStorage.setItem('theme', theme);
+if (currentTheme === 'light') {
+    $('body').removeClass('dark-theme');
+    $('body').addClass('light-theme');
+    theme = document.body.classList.contains('light-theme') ? 'light' : 'dark'
+} else if (currentTheme === 'dark') {
+    theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light'
+} else if (currentTheme === null) {
+    $('body').removeClass('dark-theme');
+    $('body').addClass('light-theme');
+    theme = document.body.classList.contains('light-theme') ? 'light' : 'dark'
 }
-boton.addEventListener('change', () => {
-    let theme;
-    if (prefresDarkScheme.matches) {
-        document.body.classList.toggle('light-theme')
-        theme = document.body.classList.contains('light-theme') ? 'light' : 'dark'
-    } else {
-        document.body.classList.toggle('dark-theme')
-        theme = document.body.classList.contains('dark-theme') ? 'dark' : 'light'
-    }
-    localStorage.setItem('theme', theme);
-})
+localStorage.setItem('theme', theme);
