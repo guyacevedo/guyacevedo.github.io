@@ -1,10 +1,4 @@
-/* import fonts from fonts.css file */
 @import url(./fonts.css);
-
-
-/* css variables */
-
-
 
 html,
 body {
@@ -15,13 +9,13 @@ body {
     --roboto: 'Roboto', cursive;
 }
 
-
 body.light-theme {
     --color-bg: #ffffff;
     --color-text: #171717cd;
     --primary-color: #3880ff;
     --primary-color2: #3dc2ff;
     --title-color: #222020ea;
+    --color-swicth: #001c4e;
     --text-color: #f4f5f8;
     --color-active: #0073ff;
     --border-color: #201f1f17;
@@ -38,18 +32,16 @@ body.dark-theme {
     --primary-color: #3880ff;
     --primary-color2: #3dc2ff;
     --title-color: #f4f5f8;
+    --color-swicth: #5694ff;
     --text-color: #f4f5f8;
-    --color-active: #65aaff;
+    --color-active: #5da6ff;
     --border-color: #f5f5f568;
     --gradient-color: linear-gradient(90deg, #4458dc 0%, #0e7ff0 100%);
     --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
     --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-
-
 }
 
 @media (prefers-color-scheme: dark) {
-
     body {
         --color-bg: #ffffff;
         --color-text: #171717cd;
@@ -57,13 +49,12 @@ body.dark-theme {
         --primary-color2: #3dc2ff;
         --title-color: #222020ea;
         --text-color: #f4f5f8;
+        --color-swicth: #5694ff;
         --color-active: #0073ff;
         --border-color: #201f1f17;
         --gradient-color: linear-gradient(90deg, #4458dc 0%, #0e7ff0 100%);
         --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
         --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-
-
     }
 
     body.light-theme {
@@ -72,14 +63,13 @@ body.dark-theme {
         --primary-color: #3880ff;
         --primary-color2: #3dc2ff;
         --title-color: #222020ea;
+        --color-swicth: #001c4e;
         --text-color: #f4f5f8;
         --color-active: #0073ff;
         --border-color: #201f1f17;
         --gradient-color: linear-gradient(90deg, #4458dc 0%, #0e7ff0 100%);
         --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
         --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-
-
     }
 
 }
@@ -89,11 +79,15 @@ body {
     color: var(--color-text);
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     color: var(--color-text);
 }
-
-
 
 .switch {
     position: relative;
@@ -102,23 +96,22 @@ h1 {
     appearance: none;
     -webkit-appearance: none;
 
-    background-color: var(--color-text);
+    background-color: var(--color-swicth);
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 25px;
     box-shadow: inset 0px 0px 2px rgba(255, 255, 255, .7);
-    transition: background-image .7s ease-in-out;
+    transition: background-color .7s ease-in-out;
     outline: none;
     cursor: pointer;
     overflow: hidden;
 }
 
 .switch:checked {
-    background-color: var(--color-text);
+    background-color: var(--color-swicth);
     background-size: cover;
     transition: background-image 1s ease-in-out;
 }
-
 
 .switch:after {
     content: '';
@@ -131,7 +124,7 @@ h1 {
     left: 5px;
     top: 2px;
     transform: translateX(0px);
-    animation: off .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: off .7s forwards cubic-bezier(.8, .5, .2, 1.4);
     box-shadow: inset 5px -5px 4px rgba(53, 53, 53, 0.3);
 }
 
@@ -152,9 +145,8 @@ h1 {
     }
 }
 
-
 .switch:checked:after {
-    animation: on .5s forwards cubic-bezier(.8, .5, .2, 1.4);
+    animation: on .7s forwards cubic-bezier(.8, .5, .2, 1.4);
     box-shadow: inset -5px -5px 4px rgba(53, 53, 53, 0.3);
 }
 
@@ -175,18 +167,18 @@ h1 {
     }
 }
 
-
 .switch:checked:before {
     content: '';
     width: 15px;
     height: 15px;
     border-radius: 50%;
     position: absolute;
+    left: 10px;
     top: 5px;
     transform-origin: 13px 0px;
     box-shadow: 5px -1px 0px #fff;
     filter: blur(0px);
-    animation: sun .5s forwards ease;
+    animation: sun .7s forwards ease;
 }
 
 @keyframes sun {
@@ -265,30 +257,6 @@ h1 {
         filter: blur(0px);
     }
 }
-
-
-
-
-
-/* CSS Variables 
-
-:root{
-    --primary-color: #3880ff;
-    --primary-color2: #3dc2ff;
-    --title-color: #141313;
-    --text-color: #f4f5f8;  
-    --border-color: #201f1f17;  
-    --gradient-color: linear-gradient(90deg, #4458dc 0%, #0e7ff0 100%);
-    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
-    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
-   
-
-    /* font family variables. *
-    --roboto: 'Roboto', cursive;
-} 
-*/
-/* import global styling */
-/* Global Classes */
 
 .title-text {
     font: normal bold 50px/ 72px var(--roboto);
@@ -418,15 +386,6 @@ button:active button:hover .btn:active,
 
 }
 
-
-/* end navigation */
-
-/* Banner Area  
-
-.site-main .site-banner {
-    background: url(../img/banner/home-banner.png) no-repeat 0% 80%;
-}
-*/
 .site-main .site-banner .site-title h3 {
     padding-top: 3%;
     font-weight: 500;
