@@ -435,6 +435,9 @@ color: var(--text-color);
     align-items: center;
 }
 
+.no-button{
+    border: none;
+}
 
 /*==================== ABOUT ====================*/
 
