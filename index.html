@@ -1,88 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png"/>
-        <meta name="description" content="This is my personal website, where I show my skills and experience.">
-        <title>Guy Acevedo | Software Developer</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my personal website, where I show my skills and experience.">
+    <!--==================== FavIcon ====================-->
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
 
-        <!--==================== UNICONS ====================-->
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--==================== SMTP JS ====================-->
+    <script src="assets/js/smtp.js"></script>
+    <title>Guy Acevedo | Software Developer</title>
+</head>
 
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.0/css/line.css">
-
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-          <!--==================== SMTP JS ====================-->
-        <script src="assets/js/smtp.js"></script>
-
-        
-    </head>
-
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav-logo">Guy Acevedo</a>
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="nav-list grid">
-                        <li class="nav-item"><a href="#home" class="nav-link active-link"><i
-                                    class="uil uil-estate nav-icon"></i>
-                                Home</a>
-                        </li>
-                        <li class="nav-item"><a href="#about" class="nav-link"><i class="uil uil-user nav-icon"></i>
-                                About</a>
-                        </li>
-                        <li class="nav-item"><a href="#skills" class="nav-link"><i
-                                    class="uil uil-file-alt nav-icon"></i>
-                                Skills</a></li>
-                        <li class="nav-item"><a href="#qualification" class="nav-link"><i
-                                    class="uil uil-scenery nav-icon"></i>
-                                Experiencie </a></li>
-                        <li class="nav-item"><a href="#portfolio" class="nav-link"><i
-                                    class="uil uil-scenery nav-icon"></i>
-                                Portfolio </a></li>
-                        <li class="nav-item"><a href="#contact" class="nav-link"><i
-                                    class="uil uil-message nav-icon"></i>
-                                Contactme</a></li>
-                    </ul>
-                    <i class="uil uil-times nav-close nav-icon" id="nav-close"></i>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">Guy Acevedo</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-home"></i>
+                            </div> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">
+                            <div class="nav-icon"><i class="fas fa-user nav-icon"></i>
+                            </div> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#qualification" class="nav-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div> Experiencie </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">
+                            <div class="nav-icon"> <i class="fas fa-laptop-code"></i>
+                            </div> Portfolio </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">
+                            <div class="nav-icon"> <i class="fas fa-envelope"></i>
+                            </div> Contactme
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-icon">
+                    <i class="fas fa-times nav-close" id="nav-close"></i>
                 </div>
-                <div class="nav-btns">
+            </div>
+            <div class="nav-btns">
 
-                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
 
-                    <div class="nav-toggle" id="nav-toggle">
-                        Menu <i class="uil uil-apps"></i>
+                <div class="nav-toggle" id="nav-toggle">
+                    Menu <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+        <!--==================== HOME ====================-->
+        <section class="home section" id="home">
+            <div class="home-container container grid">
+                <div class="home-content grid">
+                    <div class="home-social">
+                        <a target="_blank" href="" class="home-social-icon"><i class="fas fa-linkedin-alt"></i></a>
+                        <a target="_blank" href="" class="home-social-icon"><i class="fas fa-dribbble"></i></a>
+                        <a target="_blank" href="" class="home-social-icon"><i class="fas fa-github-alt"></i></a>
+                        <a target="_blank" href="" class="home-social-icon"><i class="fas fa-instagram"></i></a>
+                        <a target="_blank" href="" class="home-social-icon"><i class="fas fa-twitter-alt"></i></a>
                     </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home-container container grid">
-                    <div class="home-content grid">
-                        <div class="home-social">
-                            <a target="_blank" href="" class="home-social-icon"><i class="uil uil-linkedin-alt"></i></a>
-                            <a target="_blank" href="" class="home-social-icon"><i class="uil uil-dribbble"></i></a>
-                            <a target="_blank" href="" class="home-social-icon"><i class="uil uil-github-alt"></i></a>
-                            <a target="_blank" href="" class="home-social-icon"><i class="uil uil-instagram"></i></a>
-                            <a target="_blank" href="" class="home-social-icon"><i class="uil uil-twitter-alt"></i></a>
-                        </div>
-                        <div class="home-img">
+                    <div class="home-img">
 
 
-                            <svg class="home-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg class="home-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <mask id="mask0" mask-type="alpha">
                                     <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
@@ -97,634 +109,646 @@
                                     <image class="home-blob-img" x="12" y="1" href="assets/img/perfil-guy.png" alt="Imagen de Guy acevedo" />
                                 </g>
                             </svg>
-                        </div>
-
-                        <div class="home-data">
-                            <h6 class="home-saludo">Hi, my name is</h6>
-                            <h1 class="home-title">Guy Acevedo</h1>
-                            <h3 class="home-subtitle">Software Develeoper</h3>
-                            <h1 class="home-info">I build things for the web, desktop and mobile.</h1>
-                            <p class="home-description">I'm a system engineer specializing in software develeopment (and
-                                occasionally designing). Currently, I'm focused in freelancer
-                                dev.</p>
-                            <a href="#contact" class="button button-flex">
-                                Contact Me <i class="uil uil-message"></i>
-                            </a>
-                            <a target="_blank" href="assets/pdf/curiculum_vitae_guy_acevedo.pdf" class="button button-flex">
-                                View CV <i class="uil uil-eye"></i>
-                            </a>
-                        </div>
                     </div>
-                    <div class="home-scroll">
-                        <a href="#about" class="home-scroll-button button-flex">
-                            <i class="uil uil-mouse-alt home-scroll-mouse"></i>
-                            <span class="home-scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home-scroll-arrow"></i>
-                        </a>
+
+                    <div class="home-data">
+                        <h6 class="home-saludo">Hi, my name is</h6>
+                        <h1 class="home-title">Guy Acevedo</h1>
+                        <h3 class="home-subtitle">Software Develeoper</h3>
+                        <h1 class="home-info">I bfasd things for the web, desktop and mobile.</h1>
+                        <p class="home-description">I'm a system engineer specializing in software develeopment (and occasionally designing). Currently, I'm focused in freelancer dev.
+                        </p>
+                        <a href="#contact" class="button button-flex">
+                                Contact Me  <i class="fas fa-envelope"></i>
+                            </a>
+                        <a target="_blank" href="assets/pdf/curiculum_vitae_guy_acevedo.pdf" class="button button-flex">
+                                View CV <i class="fas fa-eye"></i>
+                            </a>
                     </div>
                 </div>
-            </section>
+                <div class="home-scroll">
+                    <a href="#about" class="home-scroll-button button-flex">
+                        <i class="fas fa-mouse-alt home-scroll-mouse"></i>
+                        <span class="home-scroll-name">Scroll down</span>
+                        <i class="fas fa-arrow-down home-scroll-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
 
-            <!--==================== ABOUT ====================-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About Me</h2>
-                <span class="section-subtitle">My Introduccion</span>
-                <div class="about-container container grid">
-                    <img src="assets/img/perfil-guy.png" alt="Imagen de Guy acevedo" class="about-img">
-                    <div class="about-data">
-                        <p class="about-description">Software developer, with knowledge and experience, working
-                            in technologies web, desktop and mobile, delivering quality work.
-                        </p>
-                        <p class="about-description">
-                            My main focus these days is building accessible, inclusive products and digital experiences
-                            for a variety of clients as a freelance developer.
-                        </p>
-                        <div class="about-info">
+        <!--==================== ABOUT ====================-->
+        <section class="about section" id="about">
+            <h2 class="section-title">About Me</h2>
+            <span class="section-subtitle">My Introduccion</span>
+            <div class="about-container container grid">
+                <img src="assets/img/perfil-guy.png" alt="Imagen de Guy acevedo" class="about-img">
+                <div class="about-data">
+                    <p class="about-description">Software developer, with knowledge and experience, working in technologies web, desktop and mobile, delivering quality work.
+                    </p>
+                    <p class="about-description">
+                        My main focus these days is bfasding accessible, inclusive products and digital experiences for a variety of clients as a freelance developer.
+                    </p>
+                    <div class="about-info">
+                        <div>
+                            <span class="about-info-title">+02</span>
+                            <span class="about-info-name">Years <br> experience</span>
+                        </div>
+                    </div>
+
+                    <div class="about-buttons">
+                        <a download="" href="assets/pdf/curiculum_vitae_guy_acevedo.pdf" class="button button-flex">
+                                Downdload CV<i class="fas fa-download button-icon"></i>
+                            </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <span class="section-subtitle">My tecnical level</span>
+            <div class="skills-container container grid">
+                <div>
+                    <!--==================== SKILL 1 ====================-->
+                    <div class="skills-content skills-open">
+                        <div class="skills-header">
+                            <i class="fas fa-laptop-code skills-icon"></i>
                             <div>
-                                <span class="about-info-title">+02</span>
-                                <span class="about-info-name">Years <br> experience</span>
+                                <h1 class="skills-title">FrontEnd Developer</h1>
+                                <span class="skills-subtitle">More than 2 years</span>
                             </div>
+                            <i class="fas fa-angle-down skills-arrow"></i>
                         </div>
-
-                        <div class="about-buttons">
-                            <a download="" href="assets/pdf/curiculum_vitae_guy_acevedo.pdf" class="button button-flex">
-                                Downdload CV<i class="uil uil-download-alt button-icon"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </section>
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <span class="section-subtitle">My tecnical level</span>
-                <div class="skills-container container grid">
-                    <div>
-                        <!--==================== SKILL 1 ====================-->
-                        <div class="skills-content skills-open">
-                            <div class="skills-header">
-                                <i class="uil uil-brackets-curly skills-icon"></i>
-                                <div>
-                                    <h1 class="skills-title">FrontEnd Developer</h1>
-                                    <span class="skills-subtitle">More than 2 years</span>
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">HTML</h3>
+                                    <span class="skills-number">100%</span>
                                 </div>
-                                <i class="uil uil-angle-down skills-arrow"></i>
-                            </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">HTML</h3>
-                                        <span class="skills-number">100%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-html"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">CSS/SASS</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-css"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">JavaScript</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-javascript"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">TypeScript</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-typescrpt"></span>
-                                    </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-html"></span>
                                 </div>
                             </div>
-                        </div>
-
-                        <!--==================== SKILL 2 ====================-->
-                        <div class="skills-content skills-close">
-                            <div class="skills-header">
-                                <i class="uil uil-server-network skills-icon"></i>
-                                <div>
-                                    <h1 class="skills-title">BackEnd Developer</h1>
-                                    <span class="skills-subtitle">More than 2 years</span>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">CSS/SASS</h3>
+                                    <span class="skills-number">90%</span>
                                 </div>
-                                <i class="uil uil-angle-down skills-arrow"></i>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-css"></span>
+                                </div>
                             </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Java</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-java"></span>
-                                    </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">JavaScript</h3>
+                                    <span class="skills-number">80%</span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">PHP</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-php"></span>
-                                    </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-javascript"></span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">SQL</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-sql"></span>
-                                    </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">TypeScript</h3>
+                                    <span class="skills-number">80%</span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">No SQL</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-nosql"></span>
-                                    </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-typescrpt"></span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <!--==================== SKILL 3 ====================-->
-                        <div class="skills-content skills-close">
-                            <div class="skills-header">
-                                <i class="uil uil-file-alt skills-icon"></i>
-                                <div>
-                                    <h1 class="skills-title">Frameworks and Libraries</h1>
-                                    <span class="skills-subtitle">More than 2 years</span>
-                                </div>
-                                <i class="uil uil-angle-down skills-arrow"></i>
+
+                    <!--==================== SKILL 2 ====================-->
+                    <div class="skills-content skills-close">
+                        <div class="skills-header">
+                            <i class="fas fa-server skills-icon"></i>
+                            <div>
+                                <h1 class="skills-title">BackEnd Developer</h1>
+                                <span class="skills-subtitle">More than 2 years</span>
                             </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">JQuery</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-jquery"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Spring</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-spring"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Laravel</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-laravel"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Codeigniter 4+</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-codeigniter"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Node.js</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-node"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Ionic 4+</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-ionic"></span>
-                                    </div>
-                                </div>
-                            </div>
+                            <i class="fas fa-angle-down skills-arrow"></i>
                         </div>
-
-                        <!--==================== SKILL 4 ====================-->
-                        <div class="skills-content skills-close">
-                            <div class="skills-header">
-                                <i class="uil uil-file-alt skills-icon"></i>
-                                <div>
-                                    <h1 class="skills-title">Tools and platforms</h1>
-                                    <span class="skills-subtitle">More than 2 years</span>
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Java</h3>
+                                    <span class="skills-number">90%</span>
                                 </div>
-                                <i class="uil uil-angle-down skills-arrow"></i>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-java"></span>
+                                </div>
                             </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Git</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-git"></span>
-                                    </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">PHP</h3>
+                                    <span class="skills-number">80%</span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Github</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-github"></span>
-                                    </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-php"></span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Firebase</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-firebase"></span>
-                                    </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">SQL</h3>
+                                    <span class="skills-number">80%</span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Spring tools suite</h3>
-                                        <span class="skills-number">100%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-spring-tools"></span>
-                                    </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-sql"></span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Eclipse</h3>
-                                        <span class="skills-number">100%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-eclipse"></span>
-                                    </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">No SQL</h3>
+                                    <span class="skills-number">80%</span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Visual Studio Code</h3>
-                                        <span class="skills-number">100%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-vsc"></span>
-                                    </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-nosql"></span>
                                 </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Android Studio</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-android"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">IntelliJ IDEA</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-intellij"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Docker</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-docker"></span>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
-
-            </section>
-
-            <!--==================== QUALIFICATION ====================-->
-            <section class="qualification section" id="qualification">
-                <h2 class="section-title">Experiencie</h2>
-                <span class="section-subtitle">My personal journey</span>
-                <div class="qualification-container container">
-                    <div class="qualification-tabs">
-                        <div class="qualification-button button-flex qualification-active" data-target="#education">
-                            <i class="uil uil-graduation-cap qualification-icon"></i>
-                            Education
+                <div>
+                    <!--==================== SKILL 3 ====================-->
+                    <div class="skills-content skills-close">
+                        <div class="skills-header">
+                            <i class="fas fa-book skills-icon"></i>
+                            <div>
+                                <h1 class="skills-title">Frameworks and Libraries</h1>
+                                <span class="skills-subtitle">More than 2 years</span>
+                            </div>
+                            <i class="fas fa-angle-down skills-arrow"></i>
                         </div>
-                        <div class="qualification-button button-flex" data-target="#work">
-                            <i class="uil uil-briefcase-alt qualification-icon"></i>
-                            Work
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">JQuery</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-jquery"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Spring</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-spring"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Laravel</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-laravel"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Codeigniter 4+</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-codeigniter"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Node.js</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-node"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Ionic 4+</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-ionic"></span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="qualification-sections">
-                        <!--==================== QUALIFICATION CONTENT 1 ====================-->
-                        <div class="qualification-content qualification-active" data-content id="education">
-                            <!--==================== QUALIFICATION 1 ====================-->
-                            <div class="qualification-data">
-                                <div>
-                                    <h3 class="qualification-title">Systems Engineer</h3>
-                                    <span class="qualification-subtitle">Colombia - University</span>
-                                    <span class="qualification-footer">Corporación Universitaria del Caribe
+
+                    <!--==================== SKILL 4 ====================-->
+                    <div class="skills-content skills-close">
+                        <div class="skills-header">
+                            <i class="fas fa-tools skills-icon"></i>
+                            <div>
+                                <h1 class="skills-title">Tools and platforms</h1>
+                                <span class="skills-subtitle">More than 2 years</span>
+                            </div>
+                            <i class="fas fa-angle-down skills-arrow"></i>
+                        </div>
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Git</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-git"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Github</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-github"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Firebase</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-firebase"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Spring tools suite</h3>
+                                    <span class="skills-number">100%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-spring-tools"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Eclipse</h3>
+                                    <span class="skills-number">100%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-eclipse"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Visual Studio Code</h3>
+                                    <span class="skills-number">100%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-vsc"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Android Studio</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-android"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">IntelliJ IDEA</h3>
+                                    <span class="skills-number">90%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-intellij"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">Docker</h3>
+                                    <span class="skills-number">80%</span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-docker"></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--==================== QUALIFICATION ====================-->
+        <section class="qualification section" id="qualification">
+            <h2 class="section-title">Experiencie</h2>
+            <span class="section-subtitle">My personal journey</span>
+            <div class="qualification-container container">
+                <div class="qualification-tabs">
+                    <div class="qualification-button button-flex qualification-active" data-target="#education">
+                        <i class="fas fa-graduation-cap qualification-icon"></i> Education
+                    </div>
+                    <div class="qualification-button button-flex" data-target="#work">
+                        <i class="fas fa-briefcase qualification-icon"></i> Work
+                    </div>
+                </div>
+                <div class="qualification-sections">
+                    <!--==================== QUALIFICATION CONTENT 1 ====================-->
+                    <div class="qualification-content qualification-active" data-content id="education">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification-data">
+                            <div>
+                                <h3 class="qualification-title">Systems Engineer</h3>
+                                <span class="qualification-subtitle">Colombia - University</span>
+                                <span class="qualification-footer">Corporación Universitaria del Caribe
                                         (CECAR)</span>
-                                    <div class="qualification-calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2014 - 2021
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification-rounder"></span>
-                                    <span class="qualification-line"></span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i> 2014 - 2021
                                 </div>
                             </div>
-                            <!--==================== QUALIFICATION 2 ====================-->
-                            <div class="qualification-data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification-rounder"></span>
-                                    <span class="qualification-line"></span>
-                                </div>
-                                <div>
-                                    <h3 class="qualification-title">FrontEnd Developer</h3>
-                                    <span class="qualification-subtitle">Colombia</span>
-                                    <br>
-                                    <span class="qualification-footer">Platzi</span>
-                                    <div class="qualification-calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - Actualidad
-                                    </div>
-                                </div>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
                             </div>
-                            <!--==================== QUALIFICATION 3 ====================-->
-                            <div class="qualification-data">
-                                <div>
-                                    <h3 class="qualification-title">BackEnd Developer</h3>
-                                    <span class="qualification-subtitle">Colombia</span>
-                                    <br>
-                                    <span class="qualification-footer">Platzi</span>
-                                    <div class="qualification-calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2021 - Actualidad
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification-rounder"></span>
-                                    <span class="qualification-line"></span>
-                                </div>
-                            </div>
-
                         </div>
-                        <!--==================== QUALIFICATION CONTENT 2 ====================-->
-                        <div class="qualification-content" data-content id="work">
-                            <!--==================== QUALIFICATION 1 ====================-->
-                            <div class="qualification-data">
-                                <div>
-                                    <h3 class="qualification-title">practicant university as FrontEnd Developer</h3>
-                                    <span class="qualification-subtitle">CECAR - Colombia</span>
-                                    <span class="qualification-footer">
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification-data">
+                            <div></div>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification-title">FrontEnd Developer</h3>
+                                <span class="qualification-subtitle">Colombia</span>
+                                <br>
+                                <span class="qualification-footer">Platzi</span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i> 2021 - Actualidad
+                                </div>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification-data">
+                            <div>
+                                <h3 class="qualification-title">BackEnd Developer</h3>
+                                <span class="qualification-subtitle">Colombia</span>
+                                <br>
+                                <span class="qualification-footer">Platzi</span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i> 2021 - Actualidad
+                                </div>
+                            </div>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!--==================== QUALIFICATION CONTENT 2 ====================-->
+                    <div class="qualification-content" data-content id="work">
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification-data">
+                            <div>
+                                <h3 class="qualification-title">practicant university as FrontEnd Developer</h3>
+                                <span class="qualification-subtitle">CECAR - Colombia</span>
+                                <span class="qualification-footer">
                                         Developed a hybrid app for two factor authentication system using Ionic 4
                                     </span>
-                                    <div class="qualification-calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        February-june 2019
-                                    </div>
-                                </div>
-                                <div>
-                                    <span class="qualification-rounder"></span>
-                                    <span class="qualification-line"></span>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i> February-june 2019
                                 </div>
                             </div>
-                            <!--==================== QUALIFICATION 2 ====================-->
-                            <div class="qualification-data">
-                                <div></div>
-                                <div>
-                                    <span class="qualification-rounder"></span>
-                                    <span class="qualification-line"></span>
-                                </div>
-                                <div>
-                                    <h3 class="qualification-title">Frelancee Developer</h3>
-                                    <span class="qualification-subtitle"> Colombia</span>
-                                    <br>
-                                    <span class="qualification-footer">
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
+                        </div>
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification-data">
+                            <div></div>
+                            <div>
+                                <span class="qualification-rounder"></span>
+                                <span class="qualification-line"></span>
+                            </div>
+                            <div>
+                                <h3 class="qualification-title">Frelancee Developer</h3>
+                                <span class="qualification-subtitle"> Colombia</span>
+                                <br>
+                                <span class="qualification-footer">
                                         <ul class="qualification-list">
                                             <li>Developed web app for administation of loans using Codeigniter 4</li>
                                             <li>Developed desktop app for administation of articles using Java</li>
                                         </ul>
                                     </span>
-                                    <div class="qualification-calendar">
-                                        <i class="uil uil-calendar-alt"></i>
-                                        2020 - 2021
-                                    </div>
+                                <div class="qualification-calendar">
+                                    <i class="fas fa-calendar-alt"></i> 2020 - 2021
                                 </div>
-
                             </div>
 
+                        </div>
 
-                        </div>
-                    </div>
-            </section>
 
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
-                <span class="section-subtitle">Most recent work</span>
-                <div class="portfolio-container container  swiper-container">
-                    <div class="swiper-wrapper">
-                        <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio-content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" alt="" class="portfolio-img">
-                            <div class="portfolio-data">
-                                <h3 class="portfolio-title">Personal Website</h3>
-                                <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS and JAVASCRIPT.</p>
-                                <a href="#home" class="button button-flex button-small portfolio-button">DEMO
-                                    <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                          <!--==================== PORTFOLIO 3 ====================-->
-                          <div class="portfolio-content grid swiper-slide">
-                            <img src="assets/img/portfolio3.jpg" alt="" class="portfolio-img">
-                            <div class="portfolio-data">
-                                <h3 class="portfolio-title">loan management system with Codeigniter 4</h3>
-                                <p class="portfolio-description">Website adaptable to all devices, with ui components for loan management.</p>
-                                <a href="#" class="button button-flex button-small portfolio-button">DEMO
-                                    <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio-content grid swiper-slide">
-                            <img src="assets/img/portfolio2.jpg" alt="" class="portfolio-img">
-                            <div class="portfolio-data">
-                                <h3 class="portfolio-title">Article management system with Java</h3>
-                                <p class="portfolio-description">Desktop app made with Java and MySQL.</p>
-                                <a href="#" class="button button-flex button-small portfolio-button">DEMO
-                                    <i class="uil uil-arrow-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                      
                     </div>
-                    <div class="swiper-button-next">
-                        <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
                 </div>
+        </section>
 
-                <!--==================== PROJECT IN MIND ====================-->
-                <section class="project section">
-                    <div class="project-bg">
-                        <div class="project-container container grid">
-                            <div class="project-data">
-                                <h2 class="project-title">You have a new project</h2>
-                                <p class="project-description">Contact me now and get a 30% discount on your new
-                                    project.
-                                </p>
-                                <a href="#contact" class="button button-flex button-white">
-                                    Contact Me
-                                    <i class="uil uil-message project-icon button-icon"></i>
+        <!--==================== PORTFOLIO ====================-->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-subtitle">Most recent work</span>
+            <div class="portfolio-container container  swiper-container">
+                <div class="swiper-wrapper">
+
+                    <!--==================== PORTFOLIO  ====================-->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="assets/img/easycode.png" alt="" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Website</h3>
+                            <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS and JAVASCRIPT.</p>
+                            <a href="/EasyCode" class="button button-flex button-small portfolio-button">DEMO
+                                    <i class="fas fa-angle-right button-icon"></i>
                                 </a>
-                            </div>
-
-                            <img src="assets/img/about-us.png" alt="" class="project-img">
                         </div>
                     </div>
-                </section>
-
-            </section>
-
-            <!--==================== CONTACT ME ====================-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact Me</h2>
-                <span class="section-subtitle">Get in touch</span>
-                <div class="contact-container container grid">
-                    <div>
-                      
-
-                        <div class="contact-information">
-                            <i class="uil uil-envelope contact-icon"></i>
-                            <div>
-                                <h3 class="contact-title">Email</h3>
-                                <span class="contact-subtitle">guy.acevedoa@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div class="contact-information">
-                            <i class="uil uil-map-marker contact-icon"></i>
-                            <div>
-                                <h3 class="contact-title">Location</h3>
-                                <span class="contact-subtitle">Colombia - Magangué, Bolivar</span>
-                            </div>
+                    <!--==================== PORTFOLIO ====================-->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="assets/img/blog.png" alt="" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Personal blog Website</h3>
+                            <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS and JAVASCRIPT.</p>
+                            <a href="/blog" class="button button-flex button-small portfolio-button">DEMO
+                                    <i class="fas fa-angle-right button-icon"></i>
+                                </a>
                         </div>
                     </div>
-                    <form action="" name="form_contact" id="form_contact" class="contact-form grid">
-                        <div class="contact-inputs grid">
-                            <div class="contact-content">
-                                <label for="name_person" class="contact-label">Name</label>
-                                <input required id="name_person" name="name_person" type="text" class="contact-input">
-                            </div>
-                            <div class="contact-content">
-                                <label for="email_person" class="contact-label">Email</label>
-                                <input id="email_person" name="email_person" required  type="email" class="contact-input">
-                            </div>
+                    <!--==================== PORTFOLIO 1 ====================-->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="assets/img/portfolio1.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">Personal Website</h3>
+                            <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS and JAVASCRIPT.</p>
+                            <a href="#home" class="button button-flex button-small portfolio-button">DEMO
+                                    <i class="fas fa-angle-right button-icon"></i>
+                                </a>
                         </div>
-
-                        <div class="contact-content">
-                            <label for="subject_person" class="contact-label">Project</label>
-                            <input id="subject_person" name="subject_person" required type="text" class="contact-input">
-                        </div>
-
-                        <div class="contact-content">
-                            <label for="message_person" class="contact-label">Message</label>
-                            <textarea required name="" id="message_person" name="message_person" cols="0" rows="3" class="contact-input"></textarea>
-                        </div>
-                        <div>
-                            <button type="submit" onclick="sendEmail()" class="button button-flex no-button">Send Message
-                                <i class="uil uil-message button-icon"></i>
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </section>
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer-bg">
-                <div class="footer-container container grid">
-                    <div>
-                        <h2 class="footer-title">Guy Acevedo</h2>
-                        <span class="footer-subtitle">Software Developer</span>
                     </div>
-
-                    <ul class="footer-links">
-                        <li>
-                            <a href="#contact" class="footer-link">Contact Me</a>
-                        </li>
-                        <li>
-                            <a href="#portfolio" class="footer-link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="footer-link">Skills</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer-socials">
-                        <a target="_blank" href="" class="footer-social"><i class="uil uil-facebook-f"></i></a>
-                        <a target="_blank" href="" class="footer-social"><i class="uil uil-instagram"></i></a>
-                        <a target="_blank" href="" class="footer-social"><i class="uil uil-twitter-alt"></i></a>
+                    <!--==================== PORTFOLIO 3 ====================-->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="assets/img/portfolio3.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">loan management system with Codeigniter 4</h3>
+                            <p class="portfolio-description">Website adaptable to all devices, with ui components for loan management.</p>
+                            <a href="#" class="button button-flex button-small portfolio-button">DEMO
+                                    <i class="fas fa-angle-right button-icon"></i>
+                                </a>
+                        </div>
+                    </div>
+                    <!--==================== PORTFOLIO 2 ====================-->
+                    <div class="portfolio-content grid swiper-slide">
+                        <img src="assets/img/portfolio2.jpg" alt="" class="portfolio-img">
+                        <div class="portfolio-data">
+                            <h3 class="portfolio-title">shoe and clothing store management system with Java</h3>
+                            <p class="portfolio-description">Desktop app made with Java and MySQL.</p>
+                            <a href="#" class="button button-flex button-small portfolio-button">DEMO
+                                    <i class="fas fa-angle-right button-icon"></i>
+                                </a>
+                        </div>
                     </div>
 
                 </div>
-                <p class="footer-copy">Copyright &#169; <span id="fecha">2021</span> <a href="#"
-                        class="footer-subtitle"> guyacevedo.github.io</a> All right reserved.</p>
+                <div class="swiper-button-next">
+                    <i class="fas fa-angle-right swiper-portfolio-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="fas fa-angle-left swiper-portfolio-icon"></i>
+                </div>
+
+                <div class="swiper-pagination"></div>
             </div>
-        </footer>
 
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="uil uil-arrow-up scrollup-icon"></i>
-        </a>
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section">
+                <div class="project-bg">
+                    <div class="project-container container grid">
+                        <div class="project-data">
+                            <h2 class="project-title">You have a new project</h2>
+                            <p class="project-description">Contact me now and get a 30% discount on your new project.
+                            </p>
+                            <a href="#contact" class="button button-flex button-white">
+                                    Contact Me
+                                    <i class="fas fa-envelope project-icon button-icon"></i>
+                                </a>
+                        </div>
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.js"></script>
+                        <img src="assets/img/about-us.png" alt="" class="project-img">
+                    </div>
+                </div>
+            </section>
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-    </body>
+        </section>
+
+        <!--==================== CONTACT ME ====================-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <span class="section-subtitle">Get in touch</span>
+            <div class="contact-container container grid">
+                <div>
+
+
+                    <div class="contact-information">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div>
+                            <h3 class="contact-title">Email</h3>
+                            <span class="contact-subtitle">guy.acevedoa@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-information">
+                        <i class="fas fa-map-marker contact-icon"></i>
+                        <div>
+                            <h3 class="contact-title">Location</h3>
+                            <span class="contact-subtitle">Colombia - Magangué, Bolivar</span>
+                        </div>
+                    </div>
+                </div>
+                <form action="" name="form_contact" id="form_contact" class="contact-form grid">
+                    <div class="contact-inputs grid">
+                        <div class="contact-content">
+                            <label for="name_person" class="contact-label">Name</label>
+                            <input required id="name_person" name="name_person" type="text" class="contact-input">
+                        </div>
+                        <div class="contact-content">
+                            <label for="email_person" class="contact-label">Email</label>
+                            <input id="email_person" name="email_person" required type="email" class="contact-input">
+                        </div>
+                    </div>
+
+                    <div class="contact-content">
+                        <label for="subject_person" class="contact-label">Project</label>
+                        <input id="subject_person" name="subject_person" required type="text" class="contact-input">
+                    </div>
+
+                    <div class="contact-content">
+                        <label for="message_person" class="contact-label">Message</label>
+                        <textarea required name="" id="message_person" name="message_person" cols="0" rows="3" class="contact-input"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" onclick="sendEmail()" class="button button-flex no-button">Send Message
+                                <i class="fas fa-envelope button-icon"></i>
+                            </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-container container grid">
+                <div>
+                    <h2 class="footer-title">Guy Acevedo</h2>
+                    <span class="footer-subtitle">Software Developer</span>
+                </div>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="#contact" class="footer-link">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer-link">Skills</a>
+                    </li>
+                </ul>
+
+                <div class="footer-socials">
+                    <a target="_blank" href="" class="footer-social"><i class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="" class="footer-social"><i class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="" class="footer-social"><i class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <p class="footer-copy">Copyright &#169; <span id="fecha">2021</span> <a href="#" class="footer-subtitle"> guyacevedo.github.io</a> All right reserved.</p>
+        </div>
+    </footer>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup-icon"></i>
+    </a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+    <!--==================== UNICONS ====================-->
+    <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
+</body>
 
 </html>
