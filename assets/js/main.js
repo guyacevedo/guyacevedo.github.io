@@ -1,17 +1,10 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
-
-
-/*===== MENU SHOW =====*/
-
-/** Add Fecha copyright */
+/* Add Fecha copyright */
 
 function setFecha() {
     document.getElementById('fecha').innerHTML = new Date().getFullYear();
 }
 
 setFecha();
-
-/* Validate if constant exists */
 
 
 /*===== MENU HIDDEN =====*/
@@ -80,56 +73,15 @@ tabs.forEach(tab => {
 });
 
 
-/*==================== SERVICES MODAL ====================*/
-
-
-/*==================== PORTFOLIO SWIPER  ====================*/
-let swiper = new Swiper(".portfolio-container", {
-    cssMode: true,
-    loop: false,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-});
-
-/*==================== TESTIMONIAL ====================*/
-
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive() {
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight
-        const sectionTop = current.offsetTop - 50;
-        sectionId = current.getAttribute('id')
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
-            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
-    })
-}
-window.addEventListener('scroll', scrollActive)
-
-
 /*==================== CHANGE BACKGROUND HEADER ====================*/
 
 function scrollHeader() {
     const nav = document.getElementById('header')
-        // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
     if (this.scrollY >= 80) nav.classList.add('scroll-header');
     else nav.classList.remove('scroll-header')
 }
+
 window.addEventListener('scroll', scrollHeader)
 
 /*==================== SHOW SCROLL UP ====================*/
@@ -139,6 +91,7 @@ function scrollUp() {
     if (this.scrollY >= 560) scrollUp.classList.add('show-scroll');
     else scrollUp.classList.remove('show-scroll')
 }
+
 window.addEventListener('scroll', scrollUp)
 
 /*==================== DARK LIGHT THEME ====================*/
@@ -167,7 +120,7 @@ themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-        // We save the theme and the current icon that the user chose
+    // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
@@ -176,14 +129,14 @@ themeButton.addEventListener('click', () => {
 
 /* ========================= SEND E-MAIL ================================================== */
 
-
-const name_person = document.getElementById("name_person");
-const email_person = document.getElementById("email_person");
-const subject_person = document.getElementById("subject_person");
-const message_person = document.getElementById("message_person");
-const form_contact = document.getElementById("form_contact");
-
 function sendEmail() {
+
+    const name_person = document.getElementById("name_person");
+    const email_person = document.getElementById("email_person");
+    const subject_person = document.getElementById("subject_person");
+    const message_person = document.getElementById("message_person");
+    const form_contact = document.getElementById("form_contact");
+
     if (name_person.value && email_person.value && subject_person.value && message_person.value) {
         event.preventDefault();
         Email.send({

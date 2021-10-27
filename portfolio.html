@@ -26,7 +26,7 @@
                 <div class="nav-menu" id="nav-menu">
                     <ul class="nav-list grid">
                         <li class="nav-item">
-                            <a href="index.html" class="nav-link active-link">
+                            <a href="index.html" class="nav-link">
                                 <div class="nav-icon">
                                     <i class="fas fa-home"></i>
                                 </div> Home
@@ -53,7 +53,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="portfolio.html" class="nav-link">
+                            <a href="portfolio.html" class="nav-link  active-link">
                                 <div class="nav-icon"> <i class="fas fa-laptop-code"></i>
                                 </div> Portfolio
                             </a>
@@ -80,87 +80,86 @@
             </nav>
         </header>
 
+
         <!--==================== MAIN ====================-->
         <main class="main">
-            <!--==================== HOME ====================-->
-            <section class="home section" id="home">
-                <div class="home-container container grid">
-                    <div class="home-content grid">
-                        <div class="home-social">
-                            <a target="_blank" href="https://www.linkedin.com/in/guyacevedo" class="home-social-icon linkedin-icon"><i
-                                    class="fab fa-linkedin"></i></a>
-                            <a target="_blank" href="https://github.com/guyacevedo" class="home-social-icon github-icon"><i
-                                    class="fab fa-github-alt"></i></a>
-                            <a target="_blank" href="https://twitter.com/guyacevedo_" class="home-social-icon twitter-icon"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a target="_blank" href="https://instagram.com/guyacevedo" class="home-social-icon instagram-icon"><i
-                                    class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="home-img">
-                            <svg class="home-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
-                                    <image class="home-blob-img" x="12" y="1" href="assets/img/perfil-guy.png"
-                                        loading="lazy" alt="Imagen de Guy acevedo" />
-                                </g>
-                            </svg>
-                        </div>
-                        <div class="home-data">
-                            <h6 class="home-saludo">Hi, my name is</h6>
-                            <h1 class="home-title">Guy Acevedo</h1>
-                            <h3 class="home-subtitle">Software Develeoper</h3>
-                            <h1 class="home-info">I build things for the web, desktop and mobile.</h1>
-                            <p class="home-description">I'm a system engineer specializing in software develeopment (and
-                                occasionally designing). Currently, I'm focused in freelancer dev.
-                            </p>
-                            <a href="contact.html" class="button button-flex">
-                                <span> Contact Me <i class="fas fa-envelope"></i></span>
-                            </a>
-                            <a target="_blank" href="assets/pdf/curiculum_vitae_guy_acevedo.pdf"
-                                class="button button-flex">
-                                <span> View CV <i class="fas fa-eye"></i> </span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="home-scroll">
-                        <a href="#project" class="home-scroll-button button-flex">
-                            <i class="fas fa-mouse-alt home-scroll-mouse"></i>
-                            <span class="home-scroll-name">Scroll down</span>
-                            <i class="fas fa-arrow-down home-scroll-arrow"></i>
-                        </a>
-                    </div>
-                </div>
-            </section>
 
-            <!--==================== PROJECT IN MIND ====================-->
-            <section class="project section" id="project">
-                <div class="project-bg">
-                    <div class="project-container container grid">
-                        <div class="project-data">
-                            <h2 class="project-title">You have a new project</h2>
-                            <p class="project-description">Contact me now and get a 30% discount on your new
-                                project.
-                            </p>
-                            <a href="contact.html" class="button button-flex button-white">
-                                Contact Me
-                                <i class="fas fa-envelope project-icon button-icon"></i>
-                            </a>
+            <!--==================== PORTFOLIO ====================-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Portfolio</h2>
+                <span class="section-subtitle">Most recent work</span>
+                <div class="portfolio-container container  swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <!--==================== PORTFOLIO  ====================-->
+                        <div class="portfolio-content grid swiper-slide">
+                            <img src="assets/img/easycode.png" loading="lazy" alt="" class="portfolio-img">
+                            <div class="portfolio-data">
+                                <h3 class="portfolio-title">Website</h3>
+                                <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS
+                                    and JAVASCRIPT.</p>
+                                <a href="/EasyCode" class="button button-flex button-small portfolio-button">DEMO
+                                    <i class="fas fa-angle-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO ====================-->
+                        <div class="portfolio-content grid swiper-slide">
+                            <img src="assets/img/blog.png" loading="lazy" alt="" class="portfolio-img">
+                            <div class="portfolio-data">
+                                <h3 class="portfolio-title">Personal blog Website</h3>
+                                <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS
+                                    and JAVASCRIPT.</p>
+                                <a href="/blog" class="button button-flex button-small portfolio-button">DEMO
+                                    <i class="fas fa-angle-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 1 ====================-->
+                        <div class="portfolio-content grid swiper-slide">
+                            <img src="assets/img/portfolio1.jpg" loading="lazy" alt="" class="portfolio-img">
+                            <div class="portfolio-data">
+                                <h3 class="portfolio-title">Personal Website</h3>
+                                <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS
+                                    and JAVASCRIPT.</p>
+                                <a href="#home" class="button button-flex button-small portfolio-button">DEMO
+                                    <i class="fas fa-angle-right button-icon"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 3 ====================-->
+                        <div class="portfolio-content grid swiper-slide">
+                            <img src="assets/img/portfolio3.jpg" loading="lazy" alt="" class="portfolio-img">
+                            <div class="portfolio-data">
+                                <h3 class="portfolio-title">Loan management system</h3>
+                                <p class="portfolio-description">Website adaptable to all devices, with ui components
+                                    for loan management.</p>
+                                <p class="portfolio-description">Developed with PHP and MySQL using framework
+                                    Codeigniter 4.</p>
+                            </div>
+                        </div>
+                        <!--==================== PORTFOLIO 2 ====================-->
+                        <div class="portfolio-content grid swiper-slide">
+                            <img src="assets/img/portfolio2.jpg" loading="lazy" alt="" class="portfolio-img">
+                            <div class="portfolio-data">
+                                <h3 class="portfolio-title">Shoes and clothes store management system</h3>
+                                <p class="portfolio-description">Desktop app made with Java and MySQL.</p>
+                            </div>
                         </div>
 
-                        <img src="assets/img/about-us.png" loading="lazy" alt="" class="project-img">
                     </div>
+                    <div class="swiper-button-next">
+                        <i class="fas fa-angle-right swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev">
+                        <i class="fas fa-angle-left swiper-portfolio-icon"></i>
+                    </div>
+
+                    <div class="swiper-pagination"></div>
                 </div>
+
             </section>
+
         </main>
 
         <!--==================== FOOTER ====================-->
@@ -205,8 +204,12 @@
             <i class="fas fa-arrow-up scrollup-icon"></i>
         </a>
 
+        <!--==================== SWIPER JS ====================-->
+        <script src="assets/js/swiper-bundle.js"></script>
         <!--==================== MAIN JS ====================-->
         <script src="assets/js/main.js"></script>
+           <!--==================== PORTFOLIO JS ====================-->
+           <script src="assets/js/portfolio.js"></script>
         <!--==================== UNICONS ====================-->
         <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
     </body>
