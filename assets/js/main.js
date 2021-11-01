@@ -1,11 +1,49 @@
-/* Add Fecha copyright */
+/*===== SCROLL REVEAL ANIMATION =====*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
 
-function setFecha() {
-    document.getElementById('fecha').innerHTML = new Date().getFullYear();
-}
 
-setFecha();
+/*home*/
+sr.reveal('.home-img', { delay: 200 });
+sr.reveal('.home-social-icon', { delay: 200 });
+sr.reveal('.home-scroll', { delay: 200 });
+sr.reveal('.project-title', { delay: 100 });
+sr.reveal('.project-description', { delay: 100 });
+sr.reveal('.project-img', { delay: 200 });
+sr.reveal('.button', { delay: 100 });
 
+/*about*/
+sr.reveal('.about-img', { delay: 200 });
+sr.reveal('.about-description', { delay: 100 });
+sr.reveal('.about-info', { delay: 100 });
+
+/*skills*/
+
+sr.reveal('.skills-title', { delay: 100 });
+sr.reveal('.skills-subtitle', { delay: 100 });
+sr.reveal('.skills-porcentage', { delay: 100 });
+sr.reveal('.skills-icon', { delay: 100 });
+sr.reveal('.skills-number', { delay: 100 });
+
+/*experence*/
+
+sr.reveal('.qualification-button', { delay: 100 });
+
+/*portfolio*/
+
+sr.reveal('.portfolio-img', { delay: 100 });
+
+/*portfolio*/
+
+
+sr.reveal('.contact-label', { delay: 100 });
+sr.reveal('.contact-title', { delay: 100 });
+sr.reveal('.contact-subtitle', { delay: 100 });
+sr.reveal('.contact-icon', { delay: 100 });
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
@@ -30,27 +68,6 @@ if (navClose) {
 navLink.forEach(n => n.addEventListener('click', () => {
     navMenu.classList.remove('show-menu');
 }));
-
-/*==================== ACCORDION SKILLS ====================*/
-
-const skillsContent = document.getElementsByClassName('skills-content'),
-    skillsHeader = document.querySelectorAll('.skills-header');
-
-function toggleSkills() {
-    let itemClass = this.parentNode.className;
-
-    for (let index = 0; index < skillsContent.length; index++) {
-        skillsContent[index].className = 'skills-content skills-close';
-    }
-
-    if (itemClass === 'skills-content skills-close') {
-        this.parentNode.className = 'skills-content skills-open';
-    }
-}
-
-skillsHeader.forEach((el) => {
-    el.addEventListener('click', toggleSkills);
-});
 
 
 /*==================== QUALIFICATION TABS ====================*/
@@ -77,7 +94,7 @@ tabs.forEach(tab => {
 
 function scrollHeader() {
     const nav = document.getElementById('header')
-    // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
+        // When the scroll is greater than 200 viewport height, add the scroll-header class to the header tag
     if (this.scrollY >= 80) nav.classList.add('scroll-header');
     else nav.classList.remove('scroll-header')
 }
@@ -120,7 +137,7 @@ themeButton.addEventListener('click', () => {
     // Add or remove the dark / icon theme
     document.body.classList.toggle(darkTheme)
     themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
+        // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
@@ -162,3 +179,11 @@ function sendEmail() {
 
 
 }
+
+/* Add Fecha copyright */
+
+function setFecha() {
+    document.getElementById('fecha').innerHTML = new Date().getFullYear();
+}
+
+setFecha();

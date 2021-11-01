@@ -1,411 +1,414 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is my personal website, where I show my skills and experience.">
-        <!--==================== FavIcon ====================-->
-        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my personal website, where I show my skills and experience.">
+    <!--==================== FavIcon ====================-->
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
 
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <!--==================== SMTP JS ====================-->
-        <script src="assets/js/smtp.js"></script>
-        <title>Guy Acevedo | Software Developer</title>
-    </head>
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--==================== SMTP JS ====================-->
+    <script src="assets/js/smtp.js"></script>
+    <title>Guy Acevedo | Software Developer</title>
+</head>
 
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="index.html" class="nav-logo">Guy Acevedo</a>
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="nav-list grid">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">
-                                <div class="nav-icon">
-                                    <i class="fas fa-home"></i>
-                                </div> Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="about.html" class="nav-link">
-                                <div class="nav-icon"><i class="fas fa-user nav-icon"></i>
-                                </div> About
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="skills.html" class="nav-link  active-link">
-                                <div class="nav-icon">
-                                    <i class="fas fa-file-alt"></i>
-                                </div> Skills
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="experiencie.html" class="nav-link">
-                                <div class="nav-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div> Experiencie
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="portfolio.html" class="nav-link">
-                                <div class="nav-icon"> <i class="fas fa-laptop-code"></i>
-                                </div> Portfolio
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">
-                                <div class="nav-icon"> <i class="fas fa-envelope"></i>
-                                </div> Contactme
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="nav-icon">
-                        <i class="fas fa-times nav-close" id="nav-close"></i>
-                    </div>
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">Guy Acevedo</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-home"></i>
+                            </div> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <div class="nav-icon"><i class="fas fa-user nav-icon"></i>
+                            </div> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="skills.html" class="nav-link  active-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="experiencie.html" class="nav-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div> Experiencie
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">
+                            <div class="nav-icon"> <i class="fas fa-laptop-code"></i>
+                            </div> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <div class="nav-icon"> <i class="fas fa-envelope"></i>
+                            </div> Contactme
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-icon">
+                    <i class="fas fa-times nav-close" id="nav-close"></i>
                 </div>
-                <div class="nav-btns">
-
-                    <i class="fas fa-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav-toggle" id="nav-toggle">
-                        Menu <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-
-            <!--==================== SKILLS ====================-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-                <span class="section-subtitle">My tecnical level</span>
-                <div class="skills-container container grid">
-                    <div>
-                        <!--==================== SKILL 1 ====================-->
-                        <div class="skills-content skills-open">
-                            <div class="skills-header">
-                                <i class="fas fa-laptop-code skills-icon"></i>
-                                <div>
-                                    <h1 class="skills-title">FrontEnd Developer</h1>
-                                    <span class="skills-subtitle">More than 1 years</span>
-                                </div>
-                                <i class="fas fa-angle-down skills-arrow"></i>
-                            </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">HTML</h3>
-                                        <span class="skills-number">100%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-html"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">CSS/SASS</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-css"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">JavaScript</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-javascript"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">TypeScript</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-typescrpt"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== SKILL 2 ====================-->
-                        <div class="skills-content skills-close">
-                            <div class="skills-header">
-                                <i class="fas fa-server skills-icon"></i>
-                                <div>
-                                    <h1 class="skills-title">BackEnd Developer</h1>
-                                    <span class="skills-subtitle">More than 1 years</span>
-                                </div>
-                                <i class="fas fa-angle-down skills-arrow"></i>
-                            </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Java</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-java"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">PHP</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-php"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">SQL</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-sql"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">No SQL</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-nosql"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <!--==================== SKILL 3 ====================-->
-                        <div class="skills-content skills-close">
-                            <div class="skills-header">
-                                <i class="fas fa-book skills-icon"></i>
-                                <div>
-                                    <h1 class="skills-title">Frameworks and Libraries</h1>
-                                    <span class="skills-subtitle">More than 1 years</span>
-                                </div>
-                                <i class="fas fa-angle-down skills-arrow"></i>
-                            </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">JQuery</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-jquery"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Spring</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-spring"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Laravel</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-laravel"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Codeigniter 4+</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-codeigniter"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Node.js</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-node"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Ionic 4+</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-ionic"></span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!--==================== SKILL 4 ====================-->
-                        <div class="skills-content skills-close">
-                            <div class="skills-header">
-                                <i class="fas fa-tools skills-icon"></i>
-                                <div>
-                                    <h1 class="skills-title">Tools and platforms</h1>
-                                    <span class="skills-subtitle">More than 1 years</span>
-                                </div>
-                                <i class="fas fa-angle-down skills-arrow"></i>
-                            </div>
-                            <div class="skills-list grid">
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Git</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-git"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Github</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-github"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Firebase</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-firebase"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Spring tools suite</h3>
-                                        <span class="skills-number">100%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-spring-tools"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Eclipse</h3>
-                                        <span class="skills-number">100%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-eclipse"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Visual Studio Code</h3>
-                                        <span class="skills-number">100%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-vsc"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Android Studio</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-android"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">IntelliJ IDEA</h3>
-                                        <span class="skills-number">90%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-intellij"></span>
-                                    </div>
-                                </div>
-                                <div class="skills-data">
-                                    <div class="skills-titles">
-                                        <h3 class="skills-name">Docker</h3>
-                                        <span class="skills-number">80%</span>
-                                    </div>
-                                    <div class="skills-bar">
-                                        <span class="skills-porcentage skills-docker"></span>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer-bg">
-                <div class="footer-container container grid">
-                    <div>
-                        <h2 class="footer-title">Guy Acevedo</h2>
-                        <span class="footer-subtitle">Software Developer</span>
-                    </div>
-
-                    <ul class="footer-links">
-                        <li>
-                            <a href="contact.html" class="footer-link">Contact Me</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" class="footer-link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="skills.html" class="footer-link">Skills</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer-socials">
-                        <a target="_blank" href="https://facebook.com/guyacevedo" class="footer-social"><i
-                                class="fab fa-facebook"></i></a>
-                        <a target="_blank" href="https://instagram.com/guyacevedo" class="footer-social"><i
-                                class="fab fa-instagram"></i></a>
-                        <a target="_blank" href="https://twitter.com/guyacevedo_" class="footer-social"><i
-                                class="fab fa-twitter"></i></a>
-                    </div>
-
-                </div>
-
-                <p class="footer-copy">Copyright &#169; <span id="fecha">2021</span> <a href="/index.html"
-                        class="footer-subtitle"> guyacevedo.github.io</a> All right
-                    reserved.</p>
             </div>
-        </footer>
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="fas fa-arrow-up scrollup-icon"></i>
-        </a>
+            <div class="nav-btns">
 
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-        <!--==================== UNICONS ====================-->
-        <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
-    </body>
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    Menu <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+        <!--==================== SKILLS ====================-->
+        <section class="skills section" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <span class="section-subtitle">My tecnical level</span>
+            <div class="skills-container container grid">
+                <div>
+                    <!--==================== SKILL 1 ====================-->
+                    <div class="skills-content ">
+                        <div class="skills-header">
+                            <i class="fas fa-laptop-code skills-icon"></i>
+                            <div>
+                                <h1 class="skills-title">FrontEnd</h1>
+                                <span class="skills-subtitle">More than 1 years</span>
+                            </div>
+                        </div>
+                        <div class="skills-list grid">
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">HTML</h3>
+                                    <span class="skills-number"><img
+                                        src="https://img.shields.io/badge/-f87035?style=&logo=html5&logoColor=white"
+                                        alt="HTML5"></span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-html"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">CSS/SASS</h3>
+                                    <span class="skills-number"><img
+                                        src="https://img.shields.io/badge/-0077b3?style=&logo=css3&logoColor=white"
+                                        alt="CSS3"></span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-css"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">JavaScript</h3>
+                                    <span class="skills-number"><img
+                                        src="https://img.shields.io/badge/-ebcb00?style=&logo=javascript&logoColor=white"
+                                        alt="JavaScript"></span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-javascript"></span>
+                                </div>
+                            </div>
+                            <div class="skills-data">
+                                <div class="skills-titles">
+                                    <h3 class="skills-name">TypeScript</h3>
+                                    <span class="skills-number"><img
+                                        src="https://img.shields.io/badge/-004f99?style=&logo=typescript&logoColor=white"
+                                        alt="typeScript"></span>
+                                </div>
+                                <div class="skills-bar">
+                                    <span class="skills-porcentage skills-typescrpt"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SKILL 2 ====================-->
+                    <div class="skills-content ">
+                        <div class=" skills-header ">
+                            <i class="fas fa-server skills-icon "></i>
+                            <div>
+                                <h1 class="skills-title ">BackEnd</h1>
+                                <span class="skills-subtitle ">More than 1 years</span>
+                            </div>
+                        </div>
+                        <div class="skills-list grid ">
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Java</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-ff0000?style=&logo=java&logoColor=white" alt="Java"></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-java "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">PHP</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-7f7cfd?style=&logo=php&logoColor=white" alt="PHP"></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-php "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">SQL</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-db8f39?style=&logo=mysql&logoColor=white" alt="SQL"></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-sql "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">No SQL</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-0d4e04?style=&logo=firebase&logoColor=white" alt="noSQL"></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-nosql "></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!--==================== SKILL 3 ====================-->
+                    <div class="skills-content  ">
+                        <div class="skills-header ">
+                            <i class="fas fa-book skills-icon "></i>
+                            <div>
+                                <h1 class="skills-title ">Frameworks and Libraries</h1>
+                                <span class="skills-subtitle ">More than 1 years</span>
+                            </div>
+                        </div>
+                        <div class="skills-list grid ">
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">JQuery</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-2d60b4?style=&logo=jquery&logoColor=white" alt="Jquery"></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-jquery "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Spring</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-0aae15?style=&logo=spring&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-spring "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Laravel</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-ff2424?style=&logo=laravel&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-laravel "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Codeigniter 4+</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-ff2424?style=&logo=codeigniter&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-codeigniter "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Node.js</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-4a9c07?style=&logo=node.js&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-node "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Ionic 4+</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-1486ff?style=&logo=ionic&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-ionic "></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--==================== SKILL 4 ====================-->
+                    <div class="skills-content ">
+                        <div class="skills-header ">
+                            <i class="fas fa-tools skills-icon "></i>
+                            <div>
+                                <h1 class="skills-title ">Tools and platforms</h1>
+                                <span class="skills-subtitle ">More than 1 years</span>
+                            </div>
+                        </div>
+                        <div class="skills-list grid ">
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Git</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-ff571f?style=&logo=git&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-git "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Github</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-110d21?style=&logo=github&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-github "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Firebase</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-e6c700?style=&logo=firebase&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-firebase "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Spring tools suite</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-006b12?style=&logo=spring+boot&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-spring-tools "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Eclipse</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-2400a8?style=&logo=eclipse&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-eclipse "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Visual Studio Code</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-1086f4?style=&logo=visualstudiocode&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-vsc "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Android Studio</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-007717?style=&logo=AndroidStudio&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-android "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">IntelliJ IDEA</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-001930?style=&logo=IntelliJIDEA&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-intellij "></span>
+                                </div>
+                            </div>
+                            <div class="skills-data ">
+                                <div class="skills-titles ">
+                                    <h3 class="skills-name ">Docker</h3>
+                                    <span class="skills-number "><img src="https://img.shields.io/badge/-0067C8?style=&logo=docker&logoColor=white" alt=""></span>
+                                </div>
+                                <div class="skills-bar ">
+                                    <span class="skills-porcentage skills-docker "></span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-container container grid">
+                <div>
+                    <h2 class="footer-title">Guy Acevedo</h2>
+                    <span class="footer-subtitle">Software Developer</span>
+                </div>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="contact.html" class="footer-link">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="skills.html" class="footer-link">Skills</a>
+                    </li>
+                </ul>
+
+                <div class="footer-socials">
+                    <a target="_blank" href="https://facebook.com/guyacevedo" class="footer-social"><i
+                                class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://instagram.com/guyacevedo" class="footer-social"><i
+                                class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/guyacevedo_" class="footer-social"><i
+                                class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <p class="footer-copy">Copyright &#169; <span id="fecha">2021</span> <a href="/index.html" class="footer-subtitle"> guyacevedo.github.io</a> All right reserved.
+            </p>
+        </div>
+    </footer>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup-icon"></i>
+    </a>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+    <!--==================== UNICONS ====================-->
+    <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
+</body>
 
 </html>

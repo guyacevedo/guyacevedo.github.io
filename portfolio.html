@@ -1,217 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="This is my personal website, where I show my skills and experience.">
-        <!--==================== FavIcon ====================-->
-        <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is my personal website, where I show my skills and experience.">
+    <!--==================== FavIcon ====================-->
+    <link rel="shortcut icon" type="image/png" href="assets/img/favicon.png" />
 
-        <!--==================== SWIPER CSS ====================-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-        <!--==================== CSS ====================-->
-        <link rel="stylesheet" href="assets/css/styles.css">
-        <!--==================== SMTP JS ====================-->
-        <script src="assets/js/smtp.js"></script>
-        <title>Guy Acevedo | Software Developer</title>
-    </head>
 
-    <body>
-        <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="index.html" class="nav-logo">Guy Acevedo</a>
-                <div class="nav-menu" id="nav-menu">
-                    <ul class="nav-list grid">
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">
-                                <div class="nav-icon">
-                                    <i class="fas fa-home"></i>
-                                </div> Home
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="about.html" class="nav-link">
-                                <div class="nav-icon"><i class="fas fa-user nav-icon"></i>
-                                </div> About
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="skills.html" class="nav-link">
-                                <div class="nav-icon">
-                                    <i class="fas fa-file-alt"></i>
-                                </div> Skills
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="experiencie.html" class="nav-link">
-                                <div class="nav-icon">
-                                    <i class="fas fa-graduation-cap"></i>
-                                </div> Experiencie
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="portfolio.html" class="nav-link  active-link">
-                                <div class="nav-icon"> <i class="fas fa-laptop-code"></i>
-                                </div> Portfolio
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="nav-link">
-                                <div class="nav-icon"> <i class="fas fa-envelope"></i>
-                                </div> Contactme
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="nav-icon">
-                        <i class="fas fa-times nav-close" id="nav-close"></i>
-                    </div>
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <!--==================== SMTP JS ====================-->
+    <script src="assets/js/smtp.js"></script>
+    <title>Guy Acevedo | Software Developer</title>
+</head>
+
+<body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav-logo">Guy Acevedo</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list grid">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-home"></i>
+                            </div> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">
+                            <div class="nav-icon"><i class="fas fa-user nav-icon"></i>
+                            </div> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="skills.html" class="nav-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div> Skills
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="experiencie.html" class="nav-link">
+                            <div class="nav-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div> Experiencie
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link  active-link">
+                            <div class="nav-icon"> <i class="fas fa-laptop-code"></i>
+                            </div> Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">
+                            <div class="nav-icon"> <i class="fas fa-envelope"></i>
+                            </div> Contactme
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-icon">
+                    <i class="fas fa-times nav-close" id="nav-close"></i>
                 </div>
-                <div class="nav-btns">
-
-                    <i class="fas fa-moon change-theme" id="theme-button"></i>
-
-                    <div class="nav-toggle" id="nav-toggle">
-                        Menu <i class="fas fa-bars"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-
-        <!--==================== MAIN ====================-->
-        <main class="main">
-
-            <!--==================== PORTFOLIO ====================-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
-                <span class="section-subtitle">Most recent work</span>
-                <div class="portfolio-container container  swiper-container">
-                    <div class="swiper-wrapper">
-
-                        <!--==================== PORTFOLIO  ====================-->
-                        <div class="portfolio-content grid swiper-slide">
-                            <img src="assets/img/easycode.png" loading="lazy" alt="" class="portfolio-img">
-                            <div class="portfolio-data">
-                                <h3 class="portfolio-title">Website</h3>
-                                <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS
-                                    and JAVASCRIPT.</p>
-                                <a href="/EasyCode" class="button button-flex button-small portfolio-button">DEMO
-                                    <i class="fas fa-angle-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--==================== PORTFOLIO ====================-->
-                        <div class="portfolio-content grid swiper-slide">
-                            <img src="assets/img/blog.png" loading="lazy" alt="" class="portfolio-img">
-                            <div class="portfolio-data">
-                                <h3 class="portfolio-title">Personal blog Website</h3>
-                                <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS
-                                    and JAVASCRIPT.</p>
-                                <a href="/blog" class="button button-flex button-small portfolio-button">DEMO
-                                    <i class="fas fa-angle-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--==================== PORTFOLIO 1 ====================-->
-                        <div class="portfolio-content grid swiper-slide">
-                            <img src="assets/img/portfolio1.jpg" loading="lazy" alt="" class="portfolio-img">
-                            <div class="portfolio-data">
-                                <h3 class="portfolio-title">Personal Website</h3>
-                                <p class="portfolio-description">Website adaptable to all devices, made with HTML, CSS
-                                    and JAVASCRIPT.</p>
-                                <a href="#home" class="button button-flex button-small portfolio-button">DEMO
-                                    <i class="fas fa-angle-right button-icon"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <!--==================== PORTFOLIO 3 ====================-->
-                        <div class="portfolio-content grid swiper-slide">
-                            <img src="assets/img/portfolio3.jpg" loading="lazy" alt="" class="portfolio-img">
-                            <div class="portfolio-data">
-                                <h3 class="portfolio-title">Loan management system</h3>
-                                <p class="portfolio-description">Website adaptable to all devices, with ui components
-                                    for loan management.</p>
-                                <p class="portfolio-description">Developed with PHP and MySQL using framework
-                                    Codeigniter 4.</p>
-                            </div>
-                        </div>
-                        <!--==================== PORTFOLIO 2 ====================-->
-                        <div class="portfolio-content grid swiper-slide">
-                            <img src="assets/img/portfolio2.jpg" loading="lazy" alt="" class="portfolio-img">
-                            <div class="portfolio-data">
-                                <h3 class="portfolio-title">Shoes and clothes store management system</h3>
-                                <p class="portfolio-description">Desktop app made with Java and MySQL.</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="swiper-button-next">
-                        <i class="fas fa-angle-right swiper-portfolio-icon"></i>
-                    </div>
-                    <div class="swiper-button-prev">
-                        <i class="fas fa-angle-left swiper-portfolio-icon"></i>
-                    </div>
-
-                    <div class="swiper-pagination"></div>
-                </div>
-
-            </section>
-
-        </main>
-
-        <!--==================== FOOTER ====================-->
-        <footer class="footer">
-            <div class="footer-bg">
-                <div class="footer-container container grid">
-                    <div>
-                        <h2 class="footer-title">Guy Acevedo</h2>
-                        <span class="footer-subtitle">Software Developer</span>
-                    </div>
-
-                    <ul class="footer-links">
-                        <li>
-                            <a href="contact.html" class="footer-link">Contact Me</a>
-                        </li>
-                        <li>
-                            <a href="portfolio.html" class="footer-link">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="skills.html" class="footer-link">Skills</a>
-                        </li>
-                    </ul>
-
-                    <div class="footer-socials">
-                        <a target="_blank" href="https://facebook.com/guyacevedo" class="footer-social"><i
-                                class="fab fa-facebook"></i></a>
-                        <a target="_blank" href="https://instagram.com/guyacevedo" class="footer-social"><i
-                                class="fab fa-instagram"></i></a>
-                        <a target="_blank" href="https://twitter.com/guyacevedo_" class="footer-social"><i
-                                class="fab fa-twitter"></i></a>
-                    </div>
-
-                </div>
-
-                <p class="footer-copy">Copyright &#169; <span id="fecha">2021</span> <a href="/index.html"
-                        class="footer-subtitle"> guyacevedo.github.io</a> All right
-                    reserved.</p>
             </div>
-        </footer>
-        <!--==================== SCROLL TOP ====================-->
-        <a href="#" class="scrollup" id="scroll-up">
-            <i class="fas fa-arrow-up scrollup-icon"></i>
-        </a>
+            <div class="nav-btns">
 
-        <!--==================== SWIPER JS ====================-->
-        <script src="assets/js/swiper-bundle.js"></script>
-        <!--==================== MAIN JS ====================-->
-        <script src="assets/js/main.js"></script>
-           <!--==================== PORTFOLIO JS ====================-->
-           <script src="assets/js/portfolio.js"></script>
-        <!--==================== UNICONS ====================-->
-        <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
-    </body>
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
+
+                <div class="nav-toggle" id="nav-toggle">
+                    Menu <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section-title">Portfolio</h2>
+            <span class="section-subtitle">Most recent work</span>
+            <div class="portfolio-container container grid">
+
+                <div class="portfolio-content  ">
+                    <img src="assets/img/easycode.png " loading="lazy " alt=" " class="portfolio-img ">
+                    <div class="portfolio-data ">
+                        <h3 class="portfolio-title ">Website</h3>
+                        <p class="portfolio-description ">Website adaptable to all devices, made with HTML, CSS and JAVASCRIPT.</p>
+                        <a href="/EasyCode " class="button button-flex button-small portfolio-button ">DEMO
+                                    <i class="fas fa-angle-right button-icon "></i>
+                                </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content  ">
+                    <img src="assets/img/blog.png " loading="lazy " alt=" " class="portfolio-img ">
+                    <div class="portfolio-data ">
+                        <h3 class="portfolio-title ">Personal blog Website</h3>
+                        <p class="portfolio-description ">Website adaptable to all devices, made with HTML, CSS and JAVASCRIPT.</p>
+                        <a href="/blog " class="button button-flex button-small portfolio-button ">DEMO
+                                    <i class="fas fa-angle-right button-icon "></i>
+                                </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content  ">
+                    <img src="assets/img/portfolio1.jpg " loading="lazy " alt=" " class="portfolio-img ">
+                    <div class="portfolio-data ">
+                        <h3 class="portfolio-title ">Personal Website</h3>
+                        <p class="portfolio-description ">Website adaptable to all devices, made with HTML, CSS and JAVASCRIPT.</p>
+                        <a href="#home " class="button button-flex button-small portfolio-button ">DEMO
+                                    <i class="fas fa-angle-right button-icon "></i>
+                                </a>
+                    </div>
+                </div>
+
+                <div class="portfolio-content  ">
+                    <img src="assets/img/portfolio3.jpg " loading="lazy " alt=" " class="portfolio-img ">
+                    <div class="portfolio-data ">
+                        <h3 class="portfolio-title ">Loan management system</h3>
+                        <p class="portfolio-description ">Website adaptable to all devices, with ui components for loan management.</p>
+                        <p class="portfolio-description ">Developed with PHP and MySQL using framework Codeigniter 4.</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-content  ">
+                    <img src="assets/img/portfolio2.jpg " loading="lazy " alt=" " class="portfolio-img ">
+                    <div class="portfolio-data ">
+                        <h3 class="portfolio-title ">Shoes and clothes store management system</h3>
+                        <p class="portfolio-description ">Desktop app made with Java and MySQL.</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer-bg">
+            <div class="footer-container container grid">
+                <div>
+                    <h2 class="footer-title">Guy Acevedo</h2>
+                    <span class="footer-subtitle">Software Developer</span>
+                </div>
+
+                <ul class="footer-links">
+                    <li>
+                        <a href="contact.html" class="footer-link">Contact Me</a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html" class="footer-link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="skills.html" class="footer-link">Skills</a>
+                    </li>
+                </ul>
+
+                <div class="footer-socials">
+                    <a target="_blank" href="https://facebook.com/guyacevedo" class="footer-social"><i
+                                class="fab fa-facebook"></i></a>
+                    <a target="_blank" href="https://instagram.com/guyacevedo" class="footer-social"><i
+                                class="fab fa-instagram"></i></a>
+                    <a target="_blank" href="https://twitter.com/guyacevedo_" class="footer-social"><i
+                                class="fab fa-twitter"></i></a>
+                </div>
+
+            </div>
+
+            <p class="footer-copy">Copyright &#169; <span id="fecha">2021</span> <a href="/index.html" class="footer-subtitle"> guyacevedo.github.io</a> All right reserved.
+            </p>
+        </div>
+    </footer>
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup-icon"></i>
+    </a>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!--==================== UNICONS ====================-->
+    <script src="assets/js/fontawesome.js" crossorigin="anonymous"></script>
+</body>
 
 </html>
