@@ -1,49 +1,34 @@
-/*===== SCROLL REVEAL ANIMATION =====*/
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '80px',
-    duration: 2000,
-    reset: true
-});
+/*==================== DARK LIGHT THEME ====================*/
 
+const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark-theme'
+const iconTheme = 'fa-sun'
 
-/*home*/
-sr.reveal('.home-img', { delay: 200 });
-sr.reveal('.home-social-icon', { delay: 200 });
-sr.reveal('.home-scroll', { delay: 200 });
-sr.reveal('.project-title', { delay: 100 });
-sr.reveal('.project-description', { delay: 100 });
-sr.reveal('.project-img', { delay: 200 });
-sr.reveal('.button', { delay: 100 });
+// Previously selected topic (if user selected)
+const selectedTheme = localStorage.getItem('selected-theme')
+const selectedIcon = localStorage.getItem('selected-icon')
 
-/*about*/
-sr.reveal('.about-img', { delay: 200 });
-sr.reveal('.about-description', { delay: 100 });
-sr.reveal('.about-info', { delay: 100 });
+// We obtain the current theme that the interface has by validating the dark-theme class
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun'
 
-/*skills*/
+// We validate if the user previously chose a topic
+if (selectedTheme) {
+    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+    themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
+}
 
-sr.reveal('.skills-title', { delay: 100 });
-sr.reveal('.skills-subtitle', { delay: 100 });
-sr.reveal('.skills-porcentage', { delay: 100 });
-sr.reveal('.skills-icon', { delay: 100 });
-sr.reveal('.skills-number', { delay: 100 });
+// Activate / deactivate the theme manually with the button
+themeButton.addEventListener('click', () => {
+    // Add or remove the dark / icon theme
+    document.body.classList.toggle(darkTheme)
+    themeButton.classList.toggle(iconTheme)
+        // We save the theme and the current icon that the user chose
+    localStorage.setItem('selected-theme', getCurrentTheme())
+    localStorage.setItem('selected-icon', getCurrentIcon())
+})
 
-/*experence*/
-
-sr.reveal('.qualification-button', { delay: 100 });
-
-/*portfolio*/
-
-sr.reveal('.portfolio-img', { delay: 100 });
-
-/*portfolio*/
-
-
-sr.reveal('.contact-label', { delay: 100 });
-sr.reveal('.contact-title', { delay: 100 });
-sr.reveal('.contact-subtitle', { delay: 100 });
-sr.reveal('.contact-icon', { delay: 100 });
 
 /*===== MENU HIDDEN =====*/
 /* Validate if constant exists */
@@ -110,39 +95,6 @@ function scrollUp() {
 }
 
 window.addEventListener('scroll', scrollUp)
-
-/*==================== DARK LIGHT THEME ====================*/
-
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'fa-sun'
-
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
-
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'fa-moon' : 'fa-sun'
-
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.classList[selectedIcon === 'fa-moon' ? 'add' : 'remove'](iconTheme)
-}
-
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-        // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
-
-
 
 /* ========================= SEND E-MAIL ================================================== */
 
