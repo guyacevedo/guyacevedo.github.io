@@ -111,16 +111,14 @@ function sendEmail() {
         Email.send({
             SecureToken: "755ddb5e-770d-4ef6-85b5-a6050df9dd1c",
             To: 'guy.acevedoa@gmail.com',
-            From: email_person.value,
+            From: 'guy.acevedo@cecar.edu.co',
             Subject: subject_person.value,
-            Body: "Hola soy, " + name_person.value + ".<br>" + message_person.value
+            Body: "Hola soy, " + name_person.value + ".<br>Email: " + email_person.value + "<br><br>" + message_person.value
         }).then(
             message => {
                 if (message === "OK") {
                     alert("Contact email send succesfully")
                     form_contact.reset()
-                } else {
-                    alert(message)
                 }
             }
         );
