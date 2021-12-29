@@ -107,22 +107,26 @@ function sendEmail() {
     const form_contact = document.getElementById("form_contact");
 
     if (name_person.value && email_person.value && subject_person.value && message_person.value) {
+        var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         event.preventDefault();
-        Email.send({
-            SecureToken: "755ddb5e-770d-4ef6-85b5-a6050df9dd1c",
-            To: 'guy.acevedoa@gmail.com',
-            From: 'guy.acevedo@cecar.edu.co',
-            Subject: subject_person.value,
-            Body: "Hola soy, " + name_person.value + ".<br>Email: " + email_person.value + "<br><br>" + message_person.value
-        }).then(
-            message => {
-                if (message === "OK") {
-                    alert("Contact email send succesfully")
-                    form_contact.reset()
+        if (regex.test(email_person.value)) {
+            Email.send({
+                SecureToken: "755ddb5e-770d-4ef6-85b5-a6050df9dd1c",
+                To: 'guy.acevedoa@gmail.com',
+                From: 'guy.acevedo@cecar.edu.co',
+                Subject: subject_person.value,
+                Body: "Hola soy, " + name_person.value + ".<br>Email: " + email_person.value + "<br><br>" + message_person.value
+            }).then(
+                message => {
+                    if (message === "OK") {
+                        alert("Contact email send succesfully")
+                        form_contact.reset()
+                    }
                 }
-            }
-        );
-
+            );
+        } else {
+            alert("You E-mail is incorrect")
+        }
     } else {
         alert("You must complete all the fields of the contact form")
     }
