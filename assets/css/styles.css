@@ -126,6 +126,11 @@
         ul {
             list-style: none;
         }
+
+        li{
+            text-align: justify;
+            margin-bottom: var(--mb-0-5);
+        }
         
         a {
             text-decoration: none;
@@ -286,7 +291,7 @@
         }
         
         .home-content {
-            grid-template-columns: 1.5fr 3fr;
+            grid-template-columns: 1fr 3fr;
             align-items: center;
         }
         
@@ -449,9 +454,11 @@
         }
         
         .about-info {
-            display: flex;
-            justify-content: space-evenly;
-            margin-bottom: var(--mb-0-5);
+            display: inline-flex;
+            width: -webkit-fill-available;
+            justify-content: end;
+            column-gap: var(--mb-1-5);
+            margin-bottom: var(--mb-1);
         }
         
         .about-info-title {
@@ -706,6 +713,7 @@
         
         .qualification-list {
             list-style: circle;
+            
         }
         
         .qualification-title {
@@ -990,9 +998,7 @@
             .nav-list {
                 column-gap: 0;
             }
-            .home-content {
-                grid-template-columns: .25fr 3fr;
-            }
+        
             .home-blob {
                 width: 180px;
             }
@@ -1007,7 +1013,7 @@
         
         @media screen and (min-width: 568px) {
             .home-content {
-                grid-template-columns: max-content 1fr 1fr;
+                grid-template-columns: max-content 2fr 1fr;
             }
             .home-social {
                 row-gap: 1.5rem;
@@ -1023,10 +1029,10 @@
                 justify-self: center;
             }
             .home-title {
-                font-size: 2rem;
+                font-size: var(--h1-font-size);
             }
             .home-info {
-                font-size: 2rem;
+                font-size: var(--h2-font-size);
             }
             .home-subtitle {
                 font-size: var(--h3-font-size);
@@ -1122,10 +1128,7 @@
                 width: 250px;
             }
             .about-description {
-                text-align: initial;
-            }
-            .about-info {
-                justify-content: space-between;
+                text-align: justify;
             }
             .about-buttons {
                 justify-content: initial;
