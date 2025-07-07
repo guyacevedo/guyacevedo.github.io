@@ -901,11 +901,11 @@
         
         .footer-bg {
             background-color: var(--first-color);
-            padding: 2rem 0 3rem;
+            padding: var(--mb-1) 0 var(--mb-1);
         }
         
         .footer-title {
-            font-size: var(--h1-font-size);
+            font-size: var(--h2-font-size);
             margin-bottom: var(--mb-0-25);
         }
         
@@ -1165,10 +1165,7 @@
                 padding-top: .8rem;
             }
             .footer-container {
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .footer-bg {
-                padding: 3rem 0 3.5rem;
+                grid-template-columns: 1fr 1.1fr .9fr;
             }
             .footer-links {
                 flex-direction: row;
