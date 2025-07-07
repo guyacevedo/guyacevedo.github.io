@@ -684,6 +684,10 @@
             transform: rotate(-180deg);
         }
         /*==================== QUALIFICATION ====================*/
+
+        .qualification-container {
+            padding: 0 var(--mb-1-5);
+        }
         
         .qualification-tabs {
             display: flex;
