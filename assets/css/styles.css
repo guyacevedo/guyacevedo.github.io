@@ -186,6 +186,10 @@
             z-index: var(--z-fixed);
             background-color: var(--body-color);
         }
+
+        .main {
+            min-height: 80.8vh;
+        }
         /*==================== NAV ====================*/
         
         .nav {
